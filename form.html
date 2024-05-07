@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заявка</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <form action="" class="form">
+        <div class="form-head">
+            <a href="landing.html" class="btn-back"><</a>
+            <h3 class="form-title">Заявка на вступление</h3>
+        </div>
+        <div class="form-body">
+            <fieldset class="nickname-field">
+                <legend>Ваш никнейм в реальной жизни :)</legend>
+                <input type="text" class="fname" placeholder="Имя" name="fname">
+                <input type="text" class="sname" placeholder="Фамилия" name="sname">
+            </fieldset>
+            <p class="gender">Ваш пол</p>
+            <div class="input-wrapper">
+                <input type="radio" name="gender" id="male-radio" value="male" class="male-radio">
+                <label for="male-radio">M</label>
+                <input type="radio" name="gender" id="female-radio" value="female" class="female-radio">
+                <label for="female-radio">Ж</label>
+            </div>
+            <div class="input-wrapper">
+                <input type="checkbox" name="age" id="age" class="age" value="18">
+                <label for="age">Мне есть 18</label>
+            </div>
+            <div class="input-wrapper">
+                <label for="game">Ваша дисциплина</label>
+                <select name="game" id="game" class="game">
+                    <option value="cs_go">CS:GO</option>
+                    <option value="dota">Dota 2</option>
+                    <option value="apex">Apex Legends</option>
+                </select>
+            </div>
+            <textarea name="comment" id="comment" cols="30" rows="10" class="comment" placeholder="Дополнительная информация"></textarea>
+            <button class="submit">Отправить заявку</button>
+        </div>
+    </form>
+
+</body>
+</html>
